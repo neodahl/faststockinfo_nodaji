@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta property="og:title" content="노다지">
+	<!-- <meta property="og:url" content="./path"> -->
+	<!-- <meta property="og:image" content="./path"> -->
+	<!-- <meta property="og:description" content="뉴스보다 빠른 증권가 "> -->
+	<title>노다지 - 뉴스보다 빠른 증권가 찌라시</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../asset/img/favicon.ico">
+	<link rel="stylesheet" href="../asset/css/reset.css">
+	<!-- CSS libs -->
+	<link rel="stylesheet" href="../asset/css/webfont.css">
+	<link rel="stylesheet" href="../asset/css/lib/xeicon.min.css">
+	<link rel="stylesheet" href="../asset/css/lib/slick.css">
+	<link rel="stylesheet" href="../asset/css/lib/slick-theme.css">
+	<link rel="stylesheet" href="../asset/css/lib/remodal.css">
+	<link rel="stylesheet" href="../asset/css/lib/remodal-default-theme.css">
+	<!-- Style -->
+	<link rel="stylesheet" href="../asset/css/common.css">
+	<link rel="stylesheet" href="../asset/css/style.css">
+</head>
+<body>
+	<div class="app_wrapper">
+		<!-- [Start] App Header -->
+		<header class="app_header">
+			<div class="back">
+				<a href="#none" aria-label="뒤로가기" onclick="window.history.back();"></a>
+				<h2>상품구매</h2>
+			</div>
+		</header>
+		<!-- [End] App Header -->
+		
+		<!-- [Start] App Main -->
+		<div class="app_main has_bottom_button">
+			<div class="item_purchase">
+				<dl class="clearfix">
+					<dt>상품명</dt>
+					<dd>노다지 정기구독권</dd>
+				</dl>
+				<dl class="clearfix">
+					<dt>상품금액</dt>
+					<dd>50,000원</dd>
+				</dl>
+				<dl class="clearfix">
+					<dt>보유 포인트</dt>
+					<dd>27,000P</dd>
+				</dl>
+				<dl class="clearfix">
+					<dt>사용 포인트</dt>
+					<dd>
+						<!-- 일반 상품은 input엘리먼트를 사용해주시고 포인트 사용이 불가한 구독 상품은 input과 단위(P)를 제외한 strong 엘리먼트만 사용해주세요 -->
+
+						<input type="tel" value="27000">P
+
+						<!-- <strong>*구독 상품은 포인트 사용불가합니다</strong> -->
+					</dd>
+				</dl>
+				<dl class="clearfix">
+					<dt>구매자명</dt>
+					<dd>
+						<input type="text" value="네오달" placeholder="성 함">
+					</dd>
+				</dl>
+				<dl class="clearfix">
+					<dt>전화번호</dt>
+					<dd>
+						<input type="tel" value="01012341234" placeholder="휴대전화번호">
+					</dd>
+				</dl>
+				<dl class="clearfix">
+					<dt>부가세</dt>
+					<dd>0원</dd>
+				</dl>
+				<dl class="total clearfix">
+					<dt>총 구매 금액</dt>
+					<dd>23,000원</dd>
+				</dl>
+			</div>
+
+			<div class="purchase_cautions">
+				<h2 class="tit_caution">구매 유의사항</h2>
+				<ul class="txt_list type2">
+					<li>㈜파이프라인컴퍼니는 서비스 플랫폼의 제공자로서, 종목발굴 컨텐츠 제공의 당사자가 아니며 종목발굴 컨텐츠의 제공, 운영 및 관리 등과 관련한 의무와 책임은 ㈜청인투자홀딩스에게 있습니다</li>
+					<li>주식투자는 원금손실의 위험이 있으며, 본 서비스는 단순히 투자조언에 불과할 뿐 그 정확성을 담보할 수 없습니다.</li>
+					<li>제시한 목표수익률이 투자 시점에 따라 상이할 수 있으며, 이에 따른 투자 책임은 투자자 본인에게 있습니다.</li>
+					<li>종목 추천 실패로 지급되는 종목 추천 이용권은 지급일로부터 퇴대 90일간 유효합니다.</li>
+					<li>구독 및 종목 추천 특성상 사용한 구매 금액에 대해서는 환불이 불가합니다.</li>
+					<li>종목 추천에 실패할 경우, 구매 금액에 상응하는 이용권을 지급합니다. 단, 이용권은 증권가찌라시 노다지에서 지급하는 무상의 사이버머니로 환불이 불가함을 알려드립니다.</li>
+					<li>본 서비스는 ㈜청인투자홀딩스에서 제공하는 정보로,  제공 정보는 투자전략 수립을 위한 참고용 자료일 뿐 투자 권유 또는 주식거래를 목적으로 하지 않습니다.</li>
+					<li>종목 추천 서비스는 증권가찌라시 노다지 가입자 중 종목 추천 상품 구매자에 한하여 동일한 투자 정보를 제공하고 있습니다.</li>
+				</ul>
+			</div>
+
+		</div>
+		<!-- [End] App Main -->
+
+		<!-- [Start] App Bottom -->
+		<div class="app_bottom">
+			<button type="button" class="btn_l full bg_red" data-remodal-target="popPurchase" disabled>구매 유의사항 확인 및 결제하기</button>
+			<!-- 금액 조건이 만족될시에만 disabled 제거 -->
+
+			<div class="gnb">
+				<div class="layout_center clearfix">
+					<a href="./main01.html" class="menu_1">공개정보</a>
+					<a href="./stck01.html" class="menu_2 active">종목추천</a>
+					<a href="./subs01.html" class="menu_3">구독</a>
+					<a href="./main04.html" class="menu_4">커뮤니티</a>
+					<a href="./stor01.html" class="menu_5">스토어</a>
+				</div>
+			</div>
+		</div>
+		<!-- [End] App Bottom -->
+	</div>
+
+	<!-- [Start] Popup - Simple Alert -->
+	<div class="remodal alert" data-remodal-id="popPurchase">
+		<h2 class="tit_type1">구매 확인</h2>
+		<p>
+			구독 결제가 완료되었습니다.<br>매월 동일한 날짜에 정기결제가 됩니다.
+			<!-- 결제가 완료되었습니다. -->
+			<!-- 결제가 완료되었습니다.<br>목표 기간은 <em>19-11-18</em> 입니다. -->
+		</p>
+		<div class="pop_bottom">
+			<button class="btn_m full" data-remodal-action="confirm">확인</button>
+		</div>
+	</div>
+	<!-- [End] Popup - Simple Alert -->
+
+	<!-- JS libs & Common JS -->
+	<script src="../asset/js/lib/jquery-3.4.1.min.js"></script>
+	<script src="../asset/js/lib/slick.min.js"></script>
+	<script src="../asset/js/lib/remodal.js"></script>
+	<script src="../asset/js/common.js"></script>
+
+</body>
+</html>

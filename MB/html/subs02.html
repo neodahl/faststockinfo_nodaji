@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta property="og:title" content="노다지">
+	<!-- <meta property="og:url" content="./path"> -->
+	<!-- <meta property="og:image" content="./path"> -->
+	<!-- <meta property="og:description" content="뉴스보다 빠른 증권가 "> -->
+	<title>노다지 - 뉴스보다 빠른 증권가 찌라시</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../asset/img/favicon.ico">
+	<link rel="stylesheet" href="../asset/css/reset.css">
+	<!-- CSS libs -->
+	<link rel="stylesheet" href="../asset/css/webfont.css">
+	<link rel="stylesheet" href="../asset/css/lib/xeicon.min.css">
+	<link rel="stylesheet" href="../asset/css/lib/slick.css">
+	<link rel="stylesheet" href="../asset/css/lib/slick-theme.css">
+	<link rel="stylesheet" href="../asset/css/lib/remodal.css">
+	<link rel="stylesheet" href="../asset/css/lib/remodal-default-theme.css">
+	<!-- Style -->
+	<link rel="stylesheet" href="../asset/css/common.css">
+	<link rel="stylesheet" href="../asset/css/style.css">
+</head>
+<body>
+	<div class="app_wrapper">
+		<!-- [Start] App Header -->
+		<header class="app_header">
+			<div class="back">
+				<a href="#none" aria-label="뒤로가기" onclick="window.history.back();"></a>
+				<h2>노다지 구독 서비스 간편가입</h2>
+			</div>
+		</header>
+		<!-- [End] App Header -->
+		
+		<!-- [Start] App Main -->
+		<div class="app_main subs02">
+			<a class="img_banner" href="">
+				<img src="../asset/img/subs/subs_banner.png" alt="">
+			</a>
+			<div class="subscribe_order layout_center">
+				<!-- <div class="radio_container clearfix">
+					<input type="radio" name="method" id="method1" class="a11y_hidden" checked>
+					<label for="method1">기간별 1회 결제 구독</label>
+					<input type="radio" name="method" id="method2" class="a11y_hidden">
+					<label for="method2">정기 구독</label>
+				</div> -->
+
+				<div class="subs_description">
+					<p class="case1" style="display:block;">
+						<em>기간별 1회 결제 구독</em>은 선택하신 기간에 대한 구독료를<br><em>할인가로 한 번에 결제</em> 후 사용하게 됩니다.
+					</p>
+					<p class="case2">
+						<em>정기 구독</em>은 등록하신 결제 정보로<br>
+						결제하신 <em>결제일에 매월 자동 결제</em> 후 사용하게 됩니다.
+					</p>
+				</div>
+
+				<div class="choice_box">
+					<h3>노다지 구독 서비스 상품 선택</h3>
+					<div class="radio_container select_service clearfix" style="display:block;">
+						<input type="radio" name="subs1" id="item4" class="a11y_hidden">
+						<label for="item4">
+							<span>1개월 정기구독</span>
+							<p class="right_side">
+								<strong>15,000</strong>원
+							</p>
+						</label>
+
+						<input type="radio" name="subs1" id="item3" class="a11y_hidden">
+						<label for="item3" class="clearfix">
+							<span>6개월 구독권</span>
+							<p class="right_side">
+								<small>(월 <em>13,000</em>원 상당)</small>
+								<strong>78,000</strong>원
+							</p>
+						</label>
+
+						<input type="radio" name="subs1" id="item2" class="a11y_hidden">
+						<label for="item2" class="clearfix">
+							<span>1년 구독권</span>
+							<p class="right_side">
+								<small>(월 <em>11,900</em>원 상당)</small>
+								<strong>142,800</strong>원
+							</p>
+						</label>
+
+						<input type="radio" name="subs1" id="item1" class="a11y_hidden" checked>
+						<label for="item1" class="clearfix">
+							<span>2년 구독권</span>
+							<p class="right_side">
+								<small>(월 <em>9,900</em>원 상당)</small>
+								<strong>237,600</strong>원
+							</p>
+						</label>
+					</div>
+
+					<!-- <div class="radio_container select_service type2 case2">
+						<input type="radio" name="subs2" id="item4" class="a11y_hidden" checked>
+						<label for="item4">
+							매월 <strong>15,000</strong>원
+						</label>
+					</div> -->
+				</div>
+
+				<div class="form_container">
+					<div class="input_box">
+						<label for="input1">카드번호</label>
+						<input type="tel" id="input1" placeholder="'-'없이 숫자만 입력하세요">
+					</div>
+					<div class="input_box">
+						<label for="input2">유효기간</label>
+						<input type="tel" id="input2" placeholder="입력예시(월/년) : 0522">
+					</div>
+					<div class="input_box">
+						<label for="input3">주문자명</label>
+						<input type="text" id="input3" placeholder="특수문자 사용금지">
+					</div>
+					<div class="input_box">
+						<label for="input4">전화번호</label>
+						<input type="text" id="input4" placeholder="'-'없이 숫자만 입력하세요">
+					</div>
+				</div>
+
+				<label class="checkbox type_agree">
+					<input type="checkbox" name="" id="">
+					<i></i>기존 결제 정보 사용
+				</label>
+
+				<div class="bottom_check">
+					<label class="checkbox type_agree">
+						<input type="checkbox" name="" id="">
+						<i></i>아래 사항에 모두 동의 합니다.
+					</label><br>
+					<label class="checkbox type_agree">
+						<input type="checkbox" name="" id="">
+						<i></i>이용약관 동의
+					</label>
+					<button type="button" data-remodal-target="popTermService" style="margin-right:0.5em">[필수]</button>
+					<label class="checkbox type_agree">
+						<input type="checkbox" name="" id="">
+						<i></i>개인정보 수집 및 이용동의
+					</label>
+					<button type="button" data-remodal-target="popTermPersonalInfo">[필수]</button><br>
+					<label class="checkbox type_agree">
+						<input type="checkbox" name="" id="">
+						<i></i>마케팅정보 수신 동의
+					</label>
+					<button type="button" data-remodal-target="popTermMarketing">[선택]</button>
+				</div>
+
+				<div class="btn_container" style="margin-top:20px;">
+					<button type="button" class="btn_l full bg_red">노다지 주식정보 구독하기</button>
+				</div>
+
+				<img src="../asset/img/banner_authentication.jpg" alt="" class="img_banner">
+
+			</div>
+		</div>
+		<!-- [End] App Main -->
+
+		<!-- [Start] App Bottom -->
+		<div class="app_bottom">
+			<div class="gnb">
+				<div class="layout_center clearfix">
+					<a href="./main01.html" class="menu_1">공개정보</a>
+					<a href="./stck01.html" class="menu_2">종목추천</a>
+					<a href="./subs01.html" class="menu_3 active">구독</a>
+					<a href="./main04.html" class="menu_4">커뮤니티</a>
+					<a href="./stor01.html" class="menu_5">스토어</a>
+				</div>
+			</div>
+		</div>
+		<!-- [End] App Bottom -->
+	</div>
+
+	<!-- [Start] Popup - Terms:서비스 이용약관 -->
+	<div class="remodal terms" data-remodal-id="popTermService">
+		<div class="term_container">
+			<p>개인정보 수집 및 이용</p>
+		</div>
+		<div class="pop_bottom">
+			<button class="btn_m full" data-remodal-action="confirm">OK</button>
+		</div>
+	</div>
+	<!-- [End] Popup - Terms:개인정보 수집 및 이용 -->
+
+	<!-- [Start] Popup - Terms:마케팅정보 수신 동의 -->
+	<div class="remodal terms" data-remodal-id="popTermMarketing">
+		<div class="term_container">
+			<p>마케팅정보 수신 동의
+			</p>
+		</div>
+		<div class="pop_bottom">
+			<button class="btn_m full" data-remodal-action="confirm">OK</button>
+		</div>
+	</div>
+	<!-- [End] Popup - Terms:마케팅정보 수신 동의 -->
+
+
+
+	<!-- JS libs & Common JS -->
+	<script src="../asset/js/lib/jquery-3.4.1.min.js"></script>
+	<script src="../asset/js/lib/slick.min.js"></script>
+	<script src="../asset/js/lib/remodal.js"></script>
+	<!-- <script src="../asset/js/lib/gsap.min.js"></script> -->
+	<script src="../asset/js/common.js"></script>
+
+	<!-- in script -->
+	<script>
+		
+		(function(){
+			/* Payment Selecting */
+			// $('input[name="method"]').on('change', function(){
+			// 	if($('#method2').is(':checked')) {
+			// 		$('.case1').hide();
+			// 		$('.case2').show();
+			// 	} else {
+			// 		$('.case1').show();
+			// 		$('.case2').hide();
+			// 	}
+			// });
+			
+			/* bouncing animation */
+			// var bounceTL = gsap.timeline();
+			// bounceTL
+			// 	.from('.mark_plus_ribbon', {
+			// 		duration: 1, 
+			// 		ease: 'bounce.out', 
+			// 		y: -10, 
+			// 	})
+			// 	.to('.mark_plus_ribbon', {duration: 0.2, y: -10, delay: 2})
+			// 	;
+			// bounceTL.repeat(-1);
+
+		})();
+	</script>
+</body>
+</html>

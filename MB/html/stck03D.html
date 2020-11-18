@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta property="og:title" content="노다지">
+	<!-- <meta property="og:url" content="./path"> -->
+	<!-- <meta property="og:image" content="./path"> -->
+	<!-- <meta property="og:description" content="뉴스보다 빠른 증권가 "> -->
+	<title>노다지 - 뉴스보다 빠른 증권가 찌라시</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../asset/img/favicon.ico">
+	<link rel="stylesheet" href="../asset/css/reset.css">
+	<!-- CSS libs -->
+	<link rel="stylesheet" href="../asset/css/webfont.css">
+	<link rel="stylesheet" href="../asset/css/lib/xeicon.min.css">
+	<link rel="stylesheet" href="../asset/css/lib/slick.css">
+	<link rel="stylesheet" href="../asset/css/lib/slick-theme.css">
+	<link rel="stylesheet" href="../asset/css/lib/remodal.css">
+	<link rel="stylesheet" href="../asset/css/lib/remodal-default-theme.css">
+	<!-- Style -->
+	<link rel="stylesheet" href="../asset/css/common.css">
+	<link rel="stylesheet" href="../asset/css/style.css">
+</head>
+<body>
+	<div class="app_wrapper">
+		<!-- [Start] App Header -->
+		<header class="app_header">
+			<div class="back">
+				<a href="#none" aria-label="뒤로가기" onclick="window.history.back();"></a>
+				<h2>&lt;단기수익&gt; 예상주, 단 며칠만에 이룰 수익이 있습니다.</h2>
+			</div>
+		</header>
+		<!-- [End] App Header -->
+
+		<!-- [Start] App Main -->
+		<div class="app_main">
+			<div class="heading_container layout_center">
+				<h1>기간별 종목추천</h1>
+			</div>
+
+			<div class="banner_type1">
+				<a href="#none">
+					<img src="../asset/img/sample/sample_ad02.jpg" alt="">
+				</a>
+				<a href="#none">
+					<img src="../asset/img/sample/sample_ad02.jpg" alt="">
+				</a>
+				<a href="#none">
+					<img src="../asset/img/sample/sample_ad02.jpg" alt="">
+				</a>
+				<a href="#none">
+					<img src="../asset/img/sample/sample_ad02.jpg" alt="">
+				</a>
+			</div>
+
+			<!-- 구매전에는 .stock_information_container 에 hidden 클래스가 있으며,
+			구매 후에는 .before_period_item_buy 에 hidden 클래스가 추가되고 
+			.stockinfo_purchase 가 display: none; 혹은 hidden 클래스가 추가 되는 구조입니다. -->
+
+			<div class="before_period_item_buy">
+				<section class="stck_section">
+					<h2><em>추천종목</em> 기본정보</h2>
+					<div class="item_basic_info">
+						<h3>&lt;단기수익&gt; 예상주, 단 며칠만에 이룰 수익이 있습니다.</h3>
+						<p>달성 3일전 ( 11월 18일까지 )</p>
+					</div>
+				</section>
+	
+				<div class="stock_instructions type_period clearfix">
+					<dl class="target_return_rate">
+						<dt>목표수익률</dt>
+						<dd>10%</dd>
+					</dl>
+					<dl class="target_time">
+						<dt>목표기간</dt>
+						<dd>5일</dd>
+					</dl>
+					<dl class="price_range">
+						<dt>종목가격대</dt>
+						<dd>20만원 이하</dd>
+					</dl>
+				</div>
+			</div>
+
+			<div class="stock_information_container hidden">
+				<section class="stock_summary layout_center">
+					<div class="clearfix">
+						<h2>
+							<span>종목명</span>
+							<small>돼지열병테마</small>
+							바른손이앤에이
+						</h2>
+		
+						<div class="fluctuation">
+							<small>등락률</small>
+							<span class="up">10%</span>
+							<!-- .fluctuation > span 태그의 상태로 normal은 적용되는 클래스가 없고, .fluctuation > span.up이면 상승 .fluctuation > span.down이면 하락 입니다. -->
+						</div>
+					</div>
+	
+					<div class="market_watching">
+						<span>시장주목도</span>
+						<em>80%</em>
+						<div class="progress_box">
+							<span style="width:80%;"></span>
+						</div>
+					</div>
+				</section>
+	
+				<div class="recommended_item">
+					<div class="stock_instructions clearfix">
+						<dl>
+							<dt>매수가</dt>
+							<dd>
+								<small>1차</small>6,200원<br>
+								<small>2차</small>16,200원
+							</dd>
+						</dl>
+						<dl>
+							<dt>목표가</dt>
+							<dd>
+								<span>4,126,700원</span>
+							</dd>
+						</dl>
+						<dl>
+							<dt>손절가</dt>
+							<dd>
+								<span>435,800원</span>
+								이탈 시
+							</dd>
+						</dl>
+					</div>
+					
+					<div class="instruction_content">
+						<img src="../asset/img/sample/sample_stock.png" alt="">
+					</div>
+				</div>
+			</div>
+
+			<div class="item_period_info">
+				<p>
+					종료일 <em>2020.03.30</em>
+					<b>남은기간 까지 <em>3일</em></b>
+				</p>
+				<div class="progress_box">
+					<span style="width:80%;"></span>
+				</div>
+			</div>
+
+		</div>
+		<!-- [End] App Main -->
+
+		<!-- [Start] App Bottom -->
+		<div class="app_bottom">
+			<!-- [Start] Stock Information Purchase -->
+			<div class="stockinfo_purchase clearfix">
+				<h2>종목 확인</h2>
+				<div class="f_right">
+					<em>30,000원</em>
+					<a href="#none">구매하기</a>
+					<!-- <button type="button">구매하기</button> -->
+					<!-- a태그 button 태그 둘 중 어떤걸로 작업하셔도 상관 없습니다 -->
+				</div>
+			</div>
+			<!-- [End] Stock Information Purchase -->
+
+			<div class="gnb">
+				<div class="layout_center clearfix">
+					<a href="./main01.html" class="menu_1 active">공개정보</a>
+					<a href="./stck01.html" class="menu_2">종목추천</a>
+					<a href="./subs01.html" class="menu_3">구독</a>
+					<a href="./main04.html" class="menu_4">커뮤니티</a>
+					<a href="./stor01.html" class="menu_5">스토어</a>
+				</div>
+			</div>
+		</div>
+		<!-- [End] App Bottom -->
+	</div>
+	
+	<!-- JS libs & Common JS -->
+	<script src="../asset/js/lib/jquery-3.4.1.min.js"></script>
+	<script src="../asset/js/lib/slick.min.js"></script>
+	<script src="../asset/js/lib/remodal.js"></script>
+	<script src="../asset/js/common.js"></script>
+
+	<!-- in script -->
+	<script>
+		(function(){
+			/* Advertisement Slider */
+			$('.banner_type1').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				autoplay: true,
+				infinite: true,
+				speed: 500,
+				// dots: true,
+				arrows: false,
+			});
+
+		})();
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta property="og:title" content="노다지">
+	<!-- <meta property="og:url" content="./path"> -->
+	<!-- <meta property="og:image" content="./path"> -->
+	<!-- <meta property="og:description" content="뉴스보다 빠른 증권가 "> -->
+	<title>노다지 - 뉴스보다 빠른 증권가 찌라시</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../asset/img/favicon.ico">
+	<link rel="stylesheet" href="../asset/css/reset.css">
+	<!-- CSS libs -->
+	<link rel="stylesheet" href="../asset/css/webfont.css">
+	<link rel="stylesheet" href="../asset/css/lib/xeicon.min.css">
+	<link rel="stylesheet" href="../asset/css/lib/slick.css">
+	<link rel="stylesheet" href="../asset/css/lib/slick-theme.css">
+	<link rel="stylesheet" href="../asset/css/lib/remodal.css">
+	<link rel="stylesheet" href="../asset/css/lib/remodal-default-theme.css">
+	<!-- Style -->
+	<link rel="stylesheet" href="../asset/css/common.css">
+	<link rel="stylesheet" href="../asset/css/style.css">
+</head>
+<body>
+	<div class="app_wrapper">
+		<!-- [Start] App Header -->
+		<header class="app_header">
+			<div class="back">
+				<a href="#none" aria-label="뒤로가기" onclick="window.history.back();"></a>
+				<h2>정기구독 이용 내역</h2>
+			</div>
+		</header>
+		<!-- [End] App Header -->
+
+		<!-- [Start] App Main -->
+		<div class="app_main has_bottom_banner">
+			<div class="table_container" style="margin-top:14px;">
+				<table>
+					<colgroup>
+						<col style="width:18%">
+						<col style="width:18%">
+						<col>
+						<col style="width:20%">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">시작일</th>
+							<th scope="col">종료일</th>
+							<th scope="col">구독내역</th>
+							<th scope="col">구독상태</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>20.02.21</td>
+							<td>20.03.20</td>
+							<td class="f_bold">노다지 VIP 정기구독</td>
+							<td>
+								<button type="button" class="btn_s_round type_long bg_red" data-remodal-target="popCancellation">해지 신청</button>
+							</td>
+						</tr>
+						<tr>
+							<td>20.02.21</td>
+							<td>20.03.20</td>
+							<td class="f_bold">노다지 정기구독</td>
+							<td>
+								<button type="button" class="btn_s_round bg_red" disabled>종료</button>
+							</td>
+						</tr>
+						<tr>
+							<td>20.02.21</td>
+							<td>20.03.20</td>
+							<td class="f_bold">노다지 정기구독</td>
+							<td>
+								<button type="button" class="btn_s_round bg_red" disabled>종료</button>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!-- [End] App Main -->
+
+		<!-- [Start] App Bottom -->
+		<div class="app_bottom">
+			<div class="banner_type1">
+				<a href="#none">
+					<img src="../asset/img/sample/sample_ad02.jpg" alt="">
+				</a>
+				<a href="#none">
+					<img src="../asset/img/sample/sample_ad02.jpg" alt="">
+				</a>
+				<a href="#none">
+					<img src="../asset/img/sample/sample_ad02.jpg" alt="">
+				</a>
+			</div>
+
+			<div class="gnb">
+				<div class="layout_center clearfix">
+					<a href="./main01.html" class="menu_1">공개정보</a>
+					<a href="./stck01.html" class="menu_2">종목추천</a>
+					<a href="./subs01.html" class="menu_3">구독</a>
+					<a href="./main04.html" class="menu_4">커뮤니티</a>
+					<a href="./stor01.html" class="menu_5">스토어</a>
+				</div>
+			</div>
+		</div>
+		<!-- [End] App Bottom -->
+	</div>
+
+	<!-- [Start] Popup - Simple Confirm -->
+	<div class="remodal confirm" data-remodal-id="popCancellation">
+		<p>
+			노다지 정기구독을<br>
+			해지하시겠습니까?
+		</p>
+		<div class="pop_bottom">
+			<button class="btn_m cancel" data-remodal-action="cancel">취소</button>
+			<button class="btn_m" data-remodal-action="confirm" data-remodal-target="popCancelCompleted">삭제</button>
+		</div>
+	</div>
+	<!-- [End] Popup - Simple Confirm -->
+
+	<!-- [Start] Popup - Alert:Cancel Completed -->
+	<div class="remodal alert cancel_completed" data-remodal-id="popCancelCompleted">
+		<p>
+			노다지 정기구독<br>
+			<em>해지가 완료되었습니다</em>
+		</p>
+		<div class="pop_bottom">
+			<button class="btn_s_round bg_red" data-remodal-action="confirm">SEE YOU LATER!</button>
+		</div>
+	</div>
+	<!-- [End] Popup - Alert:Cancel Completed -->
+
+	<!-- JS libs & Common JS -->
+	<script src="../asset/js/lib/jquery-3.4.1.min.js"></script>
+	<script src="../asset/js/lib/slick.min.js"></script>
+	<script src="../asset/js/lib/remodal.js"></script>
+	<script src="../asset/js/common.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta property="og:title" content="노다지">
+	<!-- <meta property="og:url" content="./path"> -->
+	<!-- <meta property="og:image" content="./path"> -->
+	<!-- <meta property="og:description" content="뉴스보다 빠른 증권가 "> -->
+	<title>노다지 - 뉴스보다 빠른 증권가 찌라시</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../asset/img/favicon.ico">
+	<link rel="stylesheet" href="../asset/css/reset.css">
+	<!-- CSS libs -->
+	<link rel="stylesheet" href="../asset/css/webfont.css">
+	<link rel="stylesheet" href="../asset/css/lib/xeicon.min.css">
+	<link rel="stylesheet" href="../asset/css/lib/slick.css">
+	<link rel="stylesheet" href="../asset/css/lib/slick-theme.css">
+	<link rel="stylesheet" href="../asset/css/lib/remodal.css">
+	<link rel="stylesheet" href="../asset/css/lib/remodal-default-theme.css">
+	<!-- Style -->
+	<link rel="stylesheet" href="../asset/css/common.css">
+	<link rel="stylesheet" href="../asset/css/style.css">
+</head>
+<body>
+	<div class="app_wrapper">
+		<!-- [Start] App Header -->
+		<header class="app_header">
+			<div class="back">
+				<a href="#none" aria-label="뒤로가기" onclick="window.history.back();"></a>
+				<h2>결제정보 변경등록</h2>
+			</div>
+		</header>
+		<!-- [End] App Header -->
+
+		<!-- [Start] App Main -->
+		<div class="app_main mypg_edit_card">
+			<div class="layout_center">
+				<div class="inner_container">
+					<div class="form_container">
+						<h2 class="form_heading">결제정보 변경 등록</h2>
+
+						<div class="input_box2">
+							<label for="crdnum">카드번호</label>
+							<input id="crdnum" class="onlyNum" type="tel" placeholder="카드번호를 입력해주세요" maxlength="16" value="23123">
+						</div>
+						<div class="input_box2">
+							<label for="exprd">만료날짜</label>
+							<input id="exprd" class="onlyNum" type="tel" placeholder="MM/YY" maxlength="4">
+						</div>
+						<div class="input_box2">
+							<label for="birth">생년월일</label>
+							<input id="birth" class="onlyNum" type="tel" placeholder="생년월일 6자리를 입력해주세요" maxlength="6">
+						</div>
+						
+						<p class="product_info">
+							증권가찌라시 노다지 입니다.<br>
+							변경하신 카드로 익월 결제일에<br>
+							정기결제 진행됩니다.<br>
+							증권가찌라시 노다지를 사용해주셔서 감사합니다.
+						</p>
+						
+						<div class="bottom_check">
+							<label class="checkbox type_agree">
+								<input type="checkbox" name="" id="">
+								<i></i>아래 사항에 모두 동의 합니다.
+							</label><br>
+							<label class="checkbox type_agree">
+								<input type="checkbox" name="" id="">
+								<i></i>서비스 이용약관 동의
+							</label>
+							<a href="#none">[보기]</a><br>
+							<label class="checkbox type_agree">
+								<input type="checkbox" name="" id="">
+								<i></i>개인정보 수집 및 이용동의
+							</label>
+							<a href="#none">[보기]</a><br>
+							<label class="checkbox type_agree">
+								<input type="checkbox" name="" id="">
+								<i></i>개인 정보를 결제 서비스업체에 제공하는데에 동의합니다.
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="btn_container">
+					<button type="button" class="btn_l full bg_black">결제정보 변경 등록완료</button>
+				</div>
+			</div>
+		</div>
+		<!-- [End] App Main -->
+
+		<!-- [Start] App Bottom -->
+		<div class="app_bottom">
+			<div class="gnb">
+				<div class="layout_center clearfix">
+					<a href="./main01.html" class="menu_1">공개정보</a>
+					<a href="./stck01.html" class="menu_2">종목추천</a>
+					<a href="./subs01.html" class="menu_3">구독</a>
+					<a href="./main04.html" class="menu_4">커뮤니티</a>
+					<a href="./stor01.html" class="menu_5">스토어</a>
+				</div>
+			</div>
+		</div>
+		<!-- [End] App Bottom -->
+	</div>
+
+	<!-- JS libs & Common JS -->
+	<script src="../asset/js/lib/jquery-3.4.1.min.js"></script>
+	<script src="../asset/js/lib/slick.min.js"></script>
+	<script src="../asset/js/lib/remodal.js"></script>
+	<script src="../asset/js/common.js"></script>
+
+</body>
+</html>

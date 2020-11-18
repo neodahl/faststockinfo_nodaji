@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta property="og:title" content="노다지">
+  <!-- <meta property="og:url" content="./path"> -->
+  <!-- <meta property="og:image" content="./path"> -->
+  <!-- <meta property="og:description" content="뉴스보다 빠른 증권가 "> -->
+  <title>노다지 - 뉴스보다 빠른 증권가 찌라시</title>
+  <link rel="shortcut icon" type="image/x-icon" href="../asset/img/favicon.ico">
+  <link rel="stylesheet" href="../asset/css/reset.css">
+  <!-- CSS libs -->
+  <link rel="stylesheet" href="../asset/css/webfont.css">
+  <link rel="stylesheet" href="../asset/css/lib/xeicon.min.css">
+  <link rel="stylesheet" href="../asset/css/lib/slick.css">
+  <link rel="stylesheet" href="../asset/css/lib/slick-theme.css">
+  <link rel="stylesheet" href="../asset/css/lib/remodal.css">
+  <link rel="stylesheet" href="../asset/css/lib/remodal-default-theme.css">
+  <!-- Style -->
+  <link rel="stylesheet" href="../asset/css/common.css">
+  <link rel="stylesheet" href="../asset/css/style.css">
+</head>
+<body>
+  <div class="app_wrapper">
+    <!-- [Start] App Header -->
+    <header class="app_header">
+      <a href="./main01.html" class="home_logo">
+        <img src="../asset/img/logo.png" alt="증권찌라시 노다지">
+      </a>
+    </header>
+    <!-- [End] App Header -->
+  
+    <!-- [Start] App Main -->
+    <div class="app_main sign02">
+      <div class="layout_center">
+        <h1>비밀번호 변경</h1>
+        <div class="input_box has_btn">
+          <input type="tel" placeholder="전화번호">
+          <button type="button">인증하기</button>
+        </div>
+        <div class="input_box has_btn">
+          <input type="tel" placeholder="인증번호 입력">
+          <button type="button" data-remodal-target="popMemberCheck">확인</button>
+        </div>
+        <div class="input_box">
+          <input type="password" placeholder="새 비밀번호 (영어 숫자 조합 6자리 이상)">
+        </div>
+        <button type="button" class="btn_l full bg_red">확인</button>
+      </div>
+    </div>
+    <!-- [End] App Main -->
+  </div>
+
+  <!-- [Start] Popup - Simple Alert -->
+	<div class="remodal alert" data-remodal-id="popMemberCheck">
+		<p>
+      인증번호 확인 완료
+      <!-- 인증번호가 틀렸습니다<br> 다시확인해 주세요 -->
+    </p>
+    <div class="pop_bottom">
+      <button class="btn_m full" data-remodal-action="confirm">OK</button>
+    </div>
+	</div>
+  <!-- [End] Popup - Simple Alert -->
+
+
+  <!-- JS libs & Common JS -->
+  <script src="../asset/js/lib/jquery-3.4.1.min.js"></script>
+  <script src="../asset/js/lib/slick.min.js"></script>
+  <script src="../asset/js/lib/remodal.js"></script>
+  <script src="../asset/js/common.js"></script>
+
+</body>
+</html>

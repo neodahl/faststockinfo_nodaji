@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta property="og:title" content="노다지">
+	<!-- <meta property="og:url" content="./path"> -->
+	<!-- <meta property="og:image" content="./path"> -->
+	<!-- <meta property="og:description" content="뉴스보다 빠른 증권가 "> -->
+	<title>노다지 - 뉴스보다 빠른 증권가 찌라시</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../asset/img/favicon.ico">
+	<link rel="stylesheet" href="../asset/css/reset.css">
+	<!-- CSS libs -->
+	<link rel="stylesheet" href="../asset/css/webfont.css">
+	<link rel="stylesheet" href="../asset/css/lib/xeicon.min.css">
+	<link rel="stylesheet" href="../asset/css/lib/slick.css">
+	<link rel="stylesheet" href="../asset/css/lib/slick-theme.css">
+	<link rel="stylesheet" href="../asset/css/lib/remodal.css">
+	<link rel="stylesheet" href="../asset/css/lib/remodal-default-theme.css">
+	<!-- Style -->
+	<link rel="stylesheet" href="../asset/css/common.css">
+	<link rel="stylesheet" href="../asset/css/style.css">
+</head>
+<body>
+	<div class="app_wrapper">
+		<!-- [Start] App Header -->
+		<header class="app_header">
+			<div class="back">
+				<a href="#none" aria-label="뒤로가기" onclick="window.history.back();"></a>
+				<h2>프로필 관리</h2>
+			</div>
+		</header>
+		<!-- [End] App Header -->
+
+		<!-- [Start] App Main -->
+		<div class="app_main has_bottom_banner">
+
+			<div class="profile_edit_container clearfix">
+				<button class="btn_edit_img" type="button" aria-label="프로필 사진" style="background-image: url('../asset/img/sample/sample_user_profile.png');background-size:cover;">
+					<!-- background-size:cover; 속성은 사용자가 이미지를 등록 했을때만 inline-style로 background-image와 같이 추가 되어야 합니다. 기본 상태일 때는 모든 inline-style 속성이 제거되어야 합니다. -->
+				</button>
+				<div class="f_right">
+					<em class="nickname">네오달</em>
+					<div class="input_box has_btn">
+						<input type="text" placeholder="닉네임(한/영 10자 이내)" maxlength="10">
+						<button type="button" data-remodal-target="popNicknameCheck">변경</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="user_personal_info">
+				<div class="item">
+					<em>휴대폰번호</em>
+					<span>010-1234-1234</span>
+				</div>
+				<a href="./mypg0101.html" class="item">비밀번호 변경하기</a>
+			</div>
+		</div>
+		<!-- [End] App Main -->
+
+		<!-- [Start] App Bottom -->
+		<div class="app_bottom">
+			<div class="banner_type1">
+				<a href="#none">
+					<img src="../asset/img/sample/sample_ad02.jpg" alt="">
+				</a>
+				<a href="#none">
+					<img src="../asset/img/sample/sample_ad02.jpg" alt="">
+				</a>
+				<a href="#none">
+					<img src="../asset/img/sample/sample_ad02.jpg" alt="">
+				</a>
+			</div>
+
+			<div class="gnb">
+				<div class="layout_center clearfix">
+					<a href="./main01.html" class="menu_1">공개정보</a>
+					<a href="./stck01.html" class="menu_2">종목추천</a>
+					<a href="./subs01.html" class="menu_3">구독</a>
+					<a href="./main04.html" class="menu_4">커뮤니티</a>
+					<a href="./stor01.html" class="menu_5">스토어</a>
+				</div>
+			</div>
+		</div>
+		<!-- [End] App Bottom -->
+	</div>
+
+	<!-- [Start] Popup - Simple Alert -->
+	<div class="remodal alert" data-remodal-id="popNicknameCheck">
+		<p>
+			<!-- 닉네임이 변경되었습니다 -->
+			사용하실 수 없는 닉네임 입니다
+		</p>
+		<div class="pop_bottom">
+			<button class="btn_m full" data-remodal-action="confirm">OK</button>
+		</div>
+	</div>
+	<!-- [End] Popup - Simple Alert -->
+
+	<!-- JS libs & Common JS -->
+	<script src="../asset/js/lib/jquery-3.4.1.min.js"></script>
+	<script src="../asset/js/lib/slick.min.js"></script>
+	<script src="../asset/js/lib/remodal.js"></script>
+	<script src="../asset/js/common.js"></script>
+
+	<!-- In Script -->
+	<script>
+		(function(){
+			/* Body background-color change */
+			$('body').css('background-color', '#fff');
+
+		})();
+	</script>
+
+</body>
+</html>

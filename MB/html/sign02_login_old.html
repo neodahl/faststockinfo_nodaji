@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta property="og:title" content="노다지">
+  <!-- <meta property="og:url" content="./path"> -->
+  <!-- <meta property="og:image" content="./path"> -->
+  <!-- <meta property="og:description" content="뉴스보다 빠른 증권가 "> -->
+  <title>노다지 - 뉴스보다 빠른 증권가 찌라시</title>
+  <link rel="shortcut icon" type="image/x-icon" href="../asset/img/favicon.ico">
+  <link rel="stylesheet" href="../asset/css/reset.css">
+  <!-- CSS libs -->
+  <link rel="stylesheet" href="../asset/css/webfont.css">
+  <link rel="stylesheet" href="../asset/css/lib/xeicon.min.css">
+  <link rel="stylesheet" href="../asset/css/lib/slick.css">
+  <link rel="stylesheet" href="../asset/css/lib/slick-theme.css">
+  <link rel="stylesheet" href="../asset/css/lib/remodal.css">
+  <link rel="stylesheet" href="../asset/css/lib/remodal-default-theme.css">
+  <!-- Style -->
+  <link rel="stylesheet" href="../asset/css/common.css">
+  <link rel="stylesheet" href="../asset/css/style.css">
+</head>
+<body>
+  <div class="app_wrapper">
+    <!-- [Start] App Header -->
+    <header class="app_header">
+      <a href="./main01.html" class="home_logo">
+        <img src="../asset/img/logo.png" alt="증권찌라시 노다지">
+      </a>
+    </header>
+    <!-- [End] App Header -->
+  
+    <!-- [Start] App Main -->
+    <div class="app_main sign02">
+      <div class="layout_center">
+        <h1>회원인증/로그인</h1>
+        <div class="input_box has_btn">
+          <input type="tel" placeholder="전화번호">
+          <button type="button" data-remodal-target="popMemberCheck">회원인증</button>
+        </div>
+        <div class="input_box has_btn">
+          <input type="password" placeholder="비밀번호">
+          <button type="button" data-remodal-target="popPasswordError">확인</button>
+        </div>
+        <button type="button" class="btn_l full bg_red" data-remodal-target="popMemberCheck">로그인</button>
+        <button type="button" class="btn_l full bg_black">회원가입</button>
+
+        <div class="bottom_check">
+          <label class="checkbox type_agree">
+            <input type="checkbox" name="" id="" checked>
+            <i></i>로그인 정보 저장
+          </label><br>
+          <label class="checkbox type_agree">
+            <input type="checkbox" name="" id="" checked>
+            <i></i>로그인 상태 유지
+          </label>
+          <div class="right_side">
+            <a href="#none" class="btn_help">도움이 필요하신가요</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- [End] App Main -->
+  </div>
+
+  <!-- [Start] Popup - Simple Alert -->
+	<div class="remodal alert" data-remodal-id="popMemberCheck">
+		<p>
+      노다지 회원이 아닙니다<br> 회원가입을 해주세요
+      <!-- 회원인증이 완료되었습니다<br> 비밀번호를 설정해주세요 -->
+    </p>
+    <div class="pop_bottom">
+      <button class="btn_m full" data-remodal-action="confirm">OK</button>
+    </div>
+	</div>
+  <!-- [End] Popup - Simple Alert -->
+
+  <!-- [Start] Popup - Simple Alert -->
+	<div class="remodal alert" data-remodal-id="popPasswordError">
+		<p>
+      비밀번호는 영어/알파벳/숫자 조합<br> 6자리 이상으로 만들어 주세요
+      <!-- 비밀번호 설정이 완료되었습니다 -->
+    </p>
+    <div class="pop_bottom">
+      <button class="btn_m full" data-remodal-action="confirm">OK</button>
+    </div>
+	</div>
+  <!-- [End] Popup - Simple Alert -->
+  
+
+  <!-- JS libs & Common JS -->
+  <script src="../asset/js/lib/jquery-3.4.1.min.js"></script>
+  <script src="../asset/js/lib/slick.min.js"></script>
+  <script src="../asset/js/lib/remodal.js"></script>
+  <script src="../asset/js/common.js"></script>
+
+</body>
+</html>
