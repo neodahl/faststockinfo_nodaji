@@ -154,7 +154,10 @@ dl dd a {
 dl dd a:hover {
   text-decoration: underline;
 }
-
+dl dd p {
+	font-size: 0.8em;
+	color: #555;
+}
 
 /* depth2 */
 li > ul {
