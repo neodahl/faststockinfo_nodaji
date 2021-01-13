@@ -321,9 +321,9 @@
 }
 .search_box button {
 	position: absolute;
-	top: 0;
-	right: 0;
-	height: 30px;
+	top: -1px;
+	right: -1px;
+	height: 31px;
 	width: 49px;
 	font-size: 14px;
 	letter-spacing: 0.1em;

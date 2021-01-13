@@ -180,8 +180,8 @@
 		presentTop = $(window).scrollTop();
 	
 		if(presentTop > $helpContainer.offset().top ) {
-			$searchContainer.css('position', 'fixed').css('top', 0);
-			$lnbContainer.css('position', 'fixed').css('top', $searchContainer.outerHeight());
+			$searchContainer.css('position', 'fixed').css('top', 0).css('max-width', '480px');
+			$lnbContainer.css('position', 'fixed').css('top', $searchContainer.outerHeight()).css('max-width', '480px');
 		} else {
 			$searchContainer.css('position', 'static');
 			$lnbContainer.css('position', 'static');
